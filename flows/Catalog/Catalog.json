@@ -1,6 +1,14 @@
 {
   "name": "4be1aa8a-340d-4a36-a80a-c25122700244",
   "displayName": "Catalog",
+  "transitionRoutes": [ {
+    "intent": "redirect.departments.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Service Overview",
+    "name": "4c965093-17b3-46d1-acfd-c681da7cf39a"
+  } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
     "triggerFulfillment": {

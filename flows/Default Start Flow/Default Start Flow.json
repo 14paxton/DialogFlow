@@ -14,11 +14,11 @@
         "payload": {
           "richContent": [ [ {
             "options": [ {
-              "text": "Which artists?"
+              "text": "Account Info"
             }, {
-              "text": "Which products?"
+              "text": "Closest Branch"
             }, {
-              "text": "About my order..."
+              "text": "Credit Score"
             } ],
             "type": "chips"
           } ] ]
@@ -28,6 +28,13 @@
       "returnPartialResponses": true
     },
     "name": "a24d5778-f6ab-43f9-adfd-ce57892d6b7c"
+  }, {
+    "intent": "redirect.departments.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "a276820d-4857-4c6a-b3bd-473eef90f2c3"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",

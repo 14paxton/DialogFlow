@@ -1,0 +1,82 @@
+{
+  "name": "318284ef-802e-43d3-8085-f2ebaf953d56",
+  "displayName": "Service Overview",
+  "form": {
+    "parameters": [ {
+      "displayName": "service",
+      "required": true,
+      "entityType": "@Services",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "From which of these services are you looking for?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "payload": {
+              "richContent": [ [ {
+                "options": [ {
+                  "text": "Credit Card"
+                }, {
+                  "text": "Loans"
+                }, {
+                  "text": "Checking Account"
+                }, {
+                  "text": "Savings Account"
+                } ],
+                "type": "chips"
+              } ] ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "That verbiage seems like gibberish, please try again." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c131b60a-3074-4713-aa33-c6dc030fc695"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "We need something miss." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b7cc418d-f155-4d41-b929-4243ec9af228"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "the following services are available, Credit Card, Loans, Coffee Recomendations" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = Final",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You want to talk to an agent about $session.params.service" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Service Overview",
+    "name": "f9dd5f15-14e4-4a39-9403-d39da2202e93"
+  } ]
+}
