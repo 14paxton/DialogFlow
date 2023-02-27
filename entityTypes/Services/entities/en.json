@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "Checking Account",
+    "synonyms": [ "Checking Account" ],
+    "languageCode": "en"
+  }, {
+    "value": "Savings Account",
+    "synonyms": [ "Savings Account" ],
+    "languageCode": "en"
+  }, {
+    "value": "Personal Loan",
+    "synonyms": [ "Personal Loan" ],
+    "languageCode": "en"
+  }, {
+    "value": "Morgage",
+    "synonyms": [ "Morgage" ],
+    "languageCode": "en"
+  }, {
+    "value": "Credit Card",
+    "synonyms": [ "Credit Card" ],
+    "languageCode": "en"
+  }, {
+    "value": "Investment",
+    "synonyms": [ "Investment" ],
+    "languageCode": "en"
+  } ]
+}

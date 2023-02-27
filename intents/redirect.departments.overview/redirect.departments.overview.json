@@ -1,0 +1,10 @@
+{
+  "name": "bb41a07e-22b8-4163-8ad9-542b91412d08",
+  "displayName": "redirect.departments.overview",
+  "parameters": [ {
+    "id": "departments",
+    "entityType": "@Departments"
+  } ],
+  "priority": 500000,
+  "description": "departments supported by the credit union"
+}

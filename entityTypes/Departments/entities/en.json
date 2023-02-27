@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "Loan",
+    "synonyms": [ "credit", "funding", "Loan" ],
+    "languageCode": "en"
+  }, {
+    "value": "Account",
+    "synonyms": [ "Account", "Balance", "checking", "savings" ],
+    "languageCode": "en"
+  }, {
+    "value": "Banker",
+    "synonyms": [ "Banker", "customer service" ],
+    "languageCode": "en"
+  } ]
+}
